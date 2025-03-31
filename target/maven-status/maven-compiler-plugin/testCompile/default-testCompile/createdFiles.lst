@@ -1,0 +1,8 @@
+testcase/mainclass.class
+pageobjects/NaukariHomepage.class
+pageobjects/NaukariLoginpage.class
+utilities/ExtentReportManager.class
+utilities/DataProviders.class
+utilities/ExcelUtility.class
+pageobjects/BasePage.class
+testbase/BaseClass.class
