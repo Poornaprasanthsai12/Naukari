@@ -53,7 +53,7 @@ public class BaseClass {
 		
 		
 		logger=LogManager.getLogger(this.getClass());//Log4j
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
 //		switch(br.toLowerCase())
 //		{
 //		case "chrome": driver=new ChromeDriver(); break;
