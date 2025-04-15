@@ -61,8 +61,12 @@ public class BaseClass {
 //		default: System.out.println("No matching browser..");
 //					return;
 //		}
-		
-		driver=new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+                options.addArguments("--headless");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-dev-shm-usage");
+                driver = new ChromeDriver(options);
+		//driver=new ChromeDriver();
 		
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
