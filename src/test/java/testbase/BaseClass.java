@@ -62,9 +62,10 @@ public class BaseClass {
 //					return;
 //		}
 		ChromeOptions options = new ChromeOptions();
-                options.addArguments("--headless");
-                options.addArguments("--no-sandbox");
-                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--headless"); // Run Chrome in headless mode
+                options.addArguments("--no-sandbox"); // Bypass OS security model
+                options.addArguments("--disable-dev-shm-usage"); // For low-memory environments
+                options.addArguments("--disable-gpu"); 
                 driver = new ChromeDriver(options);
 		//driver=new ChromeDriver();
 		
